@@ -1,0 +1,2 @@
+Model,Best CV RMSE,Test RMSE,Test MAE,Test R2,Best params
+XGBoost (tuned),25386.486053434106,26889.095703125,15365.9296875,0.905737578868866,"{'subsample': 0.9, 'n_estimators': 300, 'min_child_weight': 1, 'max_depth': 3, 'learning_rate': 0.05, 'gamma': 0.0, 'colsample_bytree': 0.7}"
