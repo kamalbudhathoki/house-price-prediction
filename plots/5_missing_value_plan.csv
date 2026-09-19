@@ -1,0 +1,20 @@
+Column,Dtype,n_missing,pct_missing,why_missing,plan
+PoolQC,categorical,1453,99.52,no pool / no pool quality data,Fill with placeholder meaning 'no pool / no pool quality data': for categoricals 'None'; missingness is informative - keep an indicator
+MiscFeature,categorical,1406,96.3,none of the misc features,Fill with placeholder meaning 'none of the misc features': for categoricals 'None'; missingness is informative - keep an indicator
+Alley,categorical,1369,93.77,no alley access,Fill with placeholder meaning 'no alley access': for categoricals 'None'; missingness is informative - keep an indicator
+Fence,categorical,1179,80.75,no fence,Fill with placeholder meaning 'no fence': for categoricals 'None'; missingness is informative - keep an indicator
+MasVnrType,categorical,872,59.73,no masonry veneer,Fill with placeholder meaning 'no masonry veneer': for categoricals 'None'; missingness is informative - keep an indicator
+FireplaceQu,categorical,690,47.26,no fireplace,Fill with placeholder meaning 'no fireplace': for categoricals 'None'; missingness is informative - keep an indicator
+LotFrontage,numeric,259,17.74,genuine missing / non-responsive,Impute with median LotFrontage per Neighborhood (spatial feature)
+GarageType,categorical,81,5.55,no garage,Fill with placeholder meaning 'no garage': for categoricals 'None'; missingness is informative - keep an indicator
+GarageYrBlt,numeric,81,5.55,no garage built year,Fill with YearBuilt where garage exists (NA rows have no garage)
+GarageFinish,categorical,81,5.55,no garage,Fill with placeholder meaning 'no garage': for categoricals 'None'; missingness is informative - keep an indicator
+GarageQual,categorical,81,5.55,no garage,Fill with placeholder meaning 'no garage': for categoricals 'None'; missingness is informative - keep an indicator
+GarageCond,categorical,81,5.55,no garage,Fill with placeholder meaning 'no garage': for categoricals 'None'; missingness is informative - keep an indicator
+BsmtExposure,categorical,38,2.6,no basement,Fill with placeholder meaning 'no basement': for categoricals 'None'; missingness is informative - keep an indicator
+BsmtFinType2,categorical,38,2.6,no basement,Fill with placeholder meaning 'no basement': for categoricals 'None'; missingness is informative - keep an indicator
+BsmtQual,categorical,37,2.53,no basement,Fill with placeholder meaning 'no basement': for categoricals 'None'; missingness is informative - keep an indicator
+BsmtCond,categorical,37,2.53,no basement,Fill with placeholder meaning 'no basement': for categoricals 'None'; missingness is informative - keep an indicator
+BsmtFinType1,categorical,37,2.53,no basement,Fill with placeholder meaning 'no basement': for categoricals 'None'; missingness is informative - keep an indicator
+MasVnrArea,numeric,8,0.55,genuine missing / non-responsive,Fill 0 (NA pairs with MasVnrType='None')
+Electrical,categorical,1,0.07,genuine missing / non-responsive,Impute with mode ('SBrkr') - single missing value
